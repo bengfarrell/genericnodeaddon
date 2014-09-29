@@ -1,0 +1,16 @@
+{
+    "name": "GenericNodeAddonThingy!",
+    "description": "some node add-ons to demonstrate making C++ add-ons",
+    "author": "Ben Farrell <ben@benfarrell.com>",
+    "version": "0.0.1",
+    "engine": "node >= 0.11.10",
+    "devDependencies": {
+        "nan": "",
+        "gulp": "^3.8.5",
+        "gulp-download-atom-shell": "0.0.4",
+        "gulp-shell": "^0.2.7"
+    },
+    "scripts": {
+        "postinstall": "gulp downloadatomshell"
+    }
+}
