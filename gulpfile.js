@@ -13,4 +13,4 @@ gulp.task('downloadatomshell', function(cb){
     }, cb);
 });
 
-gulp.task('admin', shell.task([ binpath + ' app' ]));
+gulp.task('launch', shell.task([ binpath + ' app' ]));
