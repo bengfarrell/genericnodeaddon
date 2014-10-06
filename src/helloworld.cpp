@@ -14,4 +14,4 @@ void Init(Handle<Object> exports) {
     NanNew<FunctionTemplate>(Method)->GetFunction());
 }
 
-NODE_MODULE(hello, Init)
+NODE_MODULE(helloworld, Init)

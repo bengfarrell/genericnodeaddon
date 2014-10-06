@@ -20,6 +20,17 @@
         "include_dirs" : [
             "<!(node -e \"require('nan')\")"
         ]
+    },
+
+    {
+        "target_name": "bigmaths",
+
+        "sources": [
+            "src/bigmaths.cpp" ],
+
+        "include_dirs" : [
+            "<!(node -e \"require('nan')\")"
+        ]
     }
   ]
 }
