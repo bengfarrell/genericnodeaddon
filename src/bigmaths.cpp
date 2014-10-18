@@ -7,14 +7,14 @@ using namespace v8;
 NAN_METHOD(countto) {
     NanScope();
     if (args.Length() < 1) {
-      return NanThrowError(node::ErrnoException(errno, "No upper bound passed to method"));
+      return NanThrowError("No upper bound passed to method");
     }
     if (!args[0]->IsNumber()) {
-      return NanThrowError(node::ErrnoException(errno, "No upper bound passed to method"));
+      return NanThrowError("No upper bound passed to method");
     }
 
     if (!args[1]->IsNumber()) {
-      return NanThrowError(node::ErrnoException(errno, "No skip value passed to method"));
+      return NanThrowError("No skip value passed to method");
     }
 
     int uBound = args[0]->Uint32Value();

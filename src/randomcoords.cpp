@@ -7,10 +7,10 @@ using namespace v8;
 NAN_METHOD(getRandomCoords2D) {
     NanScope();
     if (args.Length() < 2) {
-      return NanThrowError(node::ErrnoException(errno, "gettimeofday"));
+      return NanThrowError("Expected 2 arguments");
     }
     if (!args[0]->IsNumber() || !args[1]->IsNumber()) {
-      return NanThrowError(node::ErrnoException(errno, "gettimeofday"));
+      return NanThrowError("Both args should be an integer");
     }
 
     Local<Number> xBound = args[0]->ToNumber();
@@ -25,10 +25,10 @@ NAN_METHOD(getRandomCoords2D) {
 NAN_METHOD(getRandomCoords3D) {
     NanScope();
     if (args.Length() < 3) {
-      return NanThrowError(node::ErrnoException(errno, "gettimeofday"));
+      return NanThrowError("Expected 3 arguments");
     }
     if (!args[0]->IsNumber() || !args[1]->IsNumber() || !args[2]->IsNumber()) {
-      return NanThrowError(node::ErrnoException(errno, "gettimeofday"));
+            return NanThrowError("All args should be an integer");
     }
 
     Local<Number> xBound = args[0]->ToNumber();
