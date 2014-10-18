@@ -1,5 +1,5 @@
 {
-    "name": "GenericNodeAddonThingy",
+    "name": "genericnodeaddon",
     "description": "some node add-ons to demonstrate making C++ add-ons (with Atom-Shell support for demo)",
     "author": "Ben Farrell <ben@benfarrell.com>",
     "version": "0.0.1",
